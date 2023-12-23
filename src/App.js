@@ -2,7 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+<<<<<<< HEAD
 ///********max */
+=======
+ 
+// !!!alex hi!!!!
+
+>>>>>>> a950bb5 (Alex comit)
 function App() {
   const position = [46.469569, 30.707517];
   const mapRef = useRef(null);
