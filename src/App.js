@@ -5,6 +5,11 @@ import 'leaflet/dist/leaflet.css';
  
 // !!!alex hi!!!!
 
+///********max */
+
+ 
+// !!!alex hi!!!!
+
 function App() {
   const position = [46.469569, 30.707517];
   const mapRef = useRef(null);
@@ -55,7 +60,7 @@ function App() {
       html: `<div class="custom-marker-content"><p class="custom-marker-txt">$${i+11}</p></div>`,
     });
     icons.push(customIcon)
-   }
+
   // const customIcon1 = new window.L.divIcon({
   //   className: 'custom-marker',
   //   html: '<div class="custom-marker-content"><p class="custom-marker-txt">$152</p></div>',
