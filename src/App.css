@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+.leaflet-container
+{
+  height: 100vh;
+}
+
+.custom-marker-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-marker-txt{
+  color: black;
+  background-color: rgb(255, 251, 251);
+  box-shadow: 2px 2px 1px rgb(100, 100, 100);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding:0px 15px;
+}
+/* .custom-marker-txt:active{
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 1px rgb(100, 100, 100);
+  color: white;
+} */
+
+
+.custom-marker-txt:focus,
+.custom-marker-txt:focus-within,
+.custom-marker-txt:active {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 1px rgb(100, 100, 100);
+  color: white;
+}
+
+.custom-marker-txt:hover{
+  padding:2px 17px;
+}
+
+.buttonMarcer
+{
+  width: 90%;
+  height: 30px;
+  background-color: red;
+  font-weight: bold;
+}
+
+.selectStyle{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  margin-top: 20px;
+border: 5px dashed green;
+
+}
