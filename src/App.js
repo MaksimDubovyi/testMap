@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
- 
-// !!!alex hi!!!!
 
 ///********max */
 
@@ -60,7 +58,7 @@ function App() {
       html: `<div class="custom-marker-content"><p class="custom-marker-txt">$${i+11}</p></div>`,
     });
     icons.push(customIcon)
-
+   }
   // const customIcon1 = new window.L.divIcon({
   //   className: 'custom-marker',
   //   html: '<div class="custom-marker-content"><p class="custom-marker-txt">$152</p></div>',
@@ -119,6 +117,9 @@ function App() {
         <option value="http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png" >osmfr</option>
         <option value="https://c.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png" >cyclosm</option>
       </select>
+
+
+      
       <MapContainer
         center={position}
         zoom={15}
@@ -128,7 +129,7 @@ function App() {
       >
         <TileLayer
         
-           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          //  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
            url={style}
         />
 
